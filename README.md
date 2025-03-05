@@ -14,20 +14,25 @@ The purpose of this project is to:
 ### 1. Create a Basic Greeting Endpoint
 The initial exercise is to create a simple REST endpoint `/greet` that returns a basic greeting message:
 
+http://localhost:8080/greet
+
 - **Endpoint:** `/greet`
 - **Response:** `"Welcome to Spring Boot!"`
 
 ### 2. Add Path Variable for Personalized Greeting
 The second part of the exercise is to modify the `/greet` endpoint to accept a **path variable** for a personalized greeting. For example, if the user accesses:
 
-http://localhost:8080/greet/John
+
+http://localhost:8080/greet/{name}
+
+
 The response will be: Hello John! Welcome to Spring Boot!
 
 
 ### 3. Add Optional Query Parameter
 In the final step, we extended the `/greet` endpoint to accept an **optional query parameter** for adding a custom message. For example:
 
-http://localhost:8080/greet/John?message=Good to see you!
+http://localhost:8080/greet/{name}?message={customMessage}
 
 The response will be: Hello John! Good to see you!
 
